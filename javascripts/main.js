@@ -1,4 +1,4 @@
-var markdown = new showdown.Converter(),
+var markdown = new showdown.Converter();
 
 var blogTemplate = Handlebars.compile($("#blogs-template").html());
 
