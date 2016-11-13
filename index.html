@@ -8,21 +8,25 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.5.0/showdown.min.js"></script>
     <title>Dennis Bartlett by dcbartlett</title>
   </head>
 
   <body>
 
-    <header>
-      <div class="container">
-        <h1>Dennis Bartlett</h1>
-        <h2>Node.JS Software Engineer</h2>
-        
-        <section id="downloads">
-          <a href="https://github.com/dcbartlett" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-          <a href="https://dcbartlett.github.io/resume" class="btn btn-github">Resume</a>
-        </section>
-      </div>
+    <header class="container">
+      <h1>Dennis Bartlett</h1>
+      <h2>Node.JS Software Engineer</h2>
+
+      <section id="downloads">
+        <a href="https://github.com/dcbartlett" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        <a href="https://dcbartlett.github.io/resume" class="btn btn-github">Resume</a>
+      </section>
     </header>
 
     <div class="container">
@@ -30,6 +34,10 @@
       </section>
     </div>
 
-    
+
   </body>
 </html>
+
+<script id="blogs-template" type="text/x-handlebars-template">
+  {{#list blogs}}{{/list}}
+</script>
