@@ -1,6 +1,8 @@
 var markdown = new showdown.Converter();
 
-var blogTemplate = Handlebars.compile($("#blogs-template").html());
+var html = $("#blogs-template").html();
+console.log(html);
+var blogTemplate = Handlebars.compile(html);
 
 $(function(){
   $.ajax({
