@@ -6,10 +6,10 @@ var blogTemplate = Handlebars.compile(html);
 
 $(function(){
   $.ajax({
-    url: 'http://ds151697.mlab.com:51697/dcbartlett_github_io/blogs',
+    url: 'https://ds151697.mlab.com:51697/dcbartlett_github_io/blogs',
     type: 'get',
     dataType: 'jsonp',
-    jsonp: 'jsonp', // mongod is expecting the parameter name to be called "jsonp"
+    jsonp: 'jsonp',
     success: function (data) {
       console.log('success', data);
     },
