@@ -1,12 +1,4 @@
 var markdown = new showdown.Converter();
-var firebaseConfig = {
-  apiKey: "AIzaSyAeVy0OiiA4kci9pCEMb0u6d2ZjnFHqp5s",
-  authDomain: "dcbartlett-github-io.firebaseapp.com",
-  databaseURL: "https://dcbartlett-github-io.firebaseio.com",
-  storageBucket: "dcbartlett-github-io.appspot.com",
-  messagingSenderId: "711267652519"
-};
-firebase.initializeApp(firebaseConfig);
 
 var html = $("#blogs-template").html();
 console.log(html);
@@ -14,10 +6,8 @@ var blogTemplate = Handlebars.compile(html);
 
 $(function(){
   $.ajax({
-    url: 'https://ds151697.mlab.com:51697/dcbartlett_github_io/blogs',
+    url: 'https://dcbartlett-github-io.firebaseio.com/blogs.json',
     type: 'get',
-    dataType: 'jsonp',
-    jsonp: 'jsonp',
     success: function (data) {
       console.log('success', data);
     },
