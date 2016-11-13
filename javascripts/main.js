@@ -21,7 +21,7 @@ Handlebars.registerHelper('blogs', function(blogEntries) {
   var out = '<div id="blogs">';
 
   for (var blog in blogEntries) {
-    out = out + '<div class="blog">' + markdown.makeHtml(blogEntries[i].body) + '</li>';
+    out = out + '<div class="blog">' + markdown.makeHtml(blogEntries[blog].body) + '</li>';
   }
 
   return out + '</div>';
