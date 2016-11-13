@@ -8,16 +8,14 @@ $(function(){
   $.ajax({
     url: 'https://dcbartlett-github-io.firebaseio.com/blogs.json',
     type: 'get',
-    success: function (data) {
-      console.log('success', data);
+    success: function (blogs) {
+      $("#blogView").html(blogTemplate({blogs:blogs}));
     },
     error: function (XMLHttpRequest, textStatus, errorThrown) {
       console.log('error', errorThrown);
     }
   });
 });
-
-// $("#blogView").html(blogTemplate());
 
 Handlebars.registerHelper('blogs', function(blogEntries) {
   var out = '<div id="blogs">';
