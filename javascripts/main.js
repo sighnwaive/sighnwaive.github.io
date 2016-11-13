@@ -17,7 +17,7 @@ $(function(){
   });
 });
 
-$("#blogView").html(blogTemplate());
+// $("#blogView").html(blogTemplate());
 
 Handlebars.registerHelper('blogs', function(blogEntries) {
   var out = '<div id="blogs">';
