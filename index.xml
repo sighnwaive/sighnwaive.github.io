@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Super Mario Maker Tracker</title>
-    <link>http://replace-this-with-your-hugo-site.com/index.xml</link>
-    <description>Recent content on Super Mario Maker Tracker</description>
+    <title>Dennis Bartlett</title>
+    <link>https://dcbartlett.github.io/index.xml</link>
+    <description>Recent content on Dennis Bartlett</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 11 Mar 2017 00:00:00 -0600</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dcbartlett.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>good to great</title>
-      <link>http://replace-this-with-your-hugo-site.com/post/good-to-great/</link>
+      <link>https://dcbartlett.github.io/post/good-to-great/</link>
       <pubDate>Sat, 11 Mar 2017 00:00:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/post/good-to-great/</guid>
+      <guid>https://dcbartlett.github.io/post/good-to-great/</guid>
       <description></description>
     </item>
     
