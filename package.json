@@ -1,0 +1,21 @@
+{
+  "name": "smmt",
+  "version": "0.0.0",
+  "description": "Tracker for Super Mario Maker Worlds",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcbartlett/SuperMarioMakerTracker.git"
+  },
+  "author": "Dennis Bartlett",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dcbartlett/SuperMarioMakerTracker/issues"
+  },
+  "homepage": "https://github.com/dcbartlett/SuperMarioMakerTracker#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-subtree": "^0.1.0"
+  }
+}
