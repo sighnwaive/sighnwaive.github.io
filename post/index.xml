@@ -1,20 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Post-rsses on Dennis Bartlett</title>
-    <link>https://dcbartlett.github.io/post/index.xml</link>
-    <description>Recent content in Post-rsses on Dennis Bartlett</description>
+    <title>Posts on Dennis Bartlett</title>
+    <link>https://dcbartlett.github.io/post/</link>
+    <description>Recent content in Posts on Dennis Bartlett</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Mar 2017 00:00:00 -0600</lastBuildDate>
+    <lastBuildDate>Mon, 13 Mar 2017 00:00:00 -0600</lastBuildDate>
     <atom:link href="https://dcbartlett.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>good to great</title>
-      <link>https://dcbartlett.github.io/post/good-to-great/</link>
+      <title>Mobile Apps in just an hour.</title>
+      <link>https://dcbartlett.github.io/post/mobile-apps-in-one-hour/</link>
+      <pubDate>Mon, 13 Mar 2017 00:00:00 -0600</pubDate>
+      
+      <guid>https://dcbartlett.github.io/post/mobile-apps-in-one-hour/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Welcome to the internet</title>
+      <link>https://dcbartlett.github.io/post/welcome-to-the-internet/</link>
       <pubDate>Sat, 11 Mar 2017 00:00:00 -0600</pubDate>
       
-      <guid>https://dcbartlett.github.io/post/good-to-great/</guid>
+      <guid>https://dcbartlett.github.io/post/welcome-to-the-internet/</guid>
       <description></description>
     </item>
     
