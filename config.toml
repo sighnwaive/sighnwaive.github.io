@@ -1,3 +1,8 @@
 baseurl = "https://dcbartlett.github.io/"
-title = "Dennis Bartlett"
 languageCode = "en-us"
+title = "Dennis Bartlett"
+theme = "code-editor"
+
+[params]
+    author = "Dennis Bartlett"
+    locale = "en-US"
