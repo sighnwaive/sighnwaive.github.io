@@ -1,0 +1,24 @@
+{{ partial "top.html" . }}
+<div class="hero">
+    <img class="portrait" src="https://avatars0.githubusercontent.com/u/1077050?v=3&u=8f26bf51f3bf6a6ad82cc787769eb275ccb8618a&s=400" />
+    <p class="bio">
+        {{ .Site.Title }}<br />
+        Software Engineer<br />
+        <br />
+        Primarily I deal with software, but you throw me a (beagle) bone and
+        I'll play with hardware too.  This blog is going to cover the many findings
+        in both software and hardware I come across.
+    </p>
+</div>
+{{ $paginator := .Paginate .Data.Pages.ByPublishDate }}
+<div class="articles-list">
+    {{ range $paginator.Pages }}
+    <article-item>
+        <h3><a href="{{ .Permalink }}">{{ .Title }}</a> - {{ dateFormat "2006-01-02 15:04:05" .Date }}</h3>
+        {{ if .Description }} <div class="description">//{{ .Description }}</div> {{ end }}
+        {{ .Summary }} {{ if .Summary }}<a class="read-more" href="{{ .Permalink }}">&lt;!-- Read More --&gt;</a>{{ end }}
+    </article-item>
+    {{ end }}
+</div>
+{{ template "_internal/pagination.html" . }}
+{{ partial "bottom.html" . }}

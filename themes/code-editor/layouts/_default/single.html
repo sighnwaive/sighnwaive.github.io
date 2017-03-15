@@ -1,0 +1,18 @@
+{{ partial "top.html" . }}
+<div>
+    <p class="bio">
+        {{ .Site.Title }}<br />
+        Software Engineer<br />
+    </p>
+</div>
+<article>
+  <h1>{{ .Title }}</h1>
+  <h4>{{ ( index $.Site.Data.translations $.Site.Params.locale ).datepublished }} {{ dateFormat "01-02-2006 15:04:05" .Date }}</h4>
+  
+  {{ if .Description }} <h2 class="description">{{ .Description }}</h2> {{ end }}
+  {{ .Content }}
+</article>
+{{ partial "share.html" . }}
+{{ template "_internal/disqus.html" . }}
+
+{{ partial "bottom.html" . }}
