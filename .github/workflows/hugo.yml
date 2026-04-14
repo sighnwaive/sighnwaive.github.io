@@ -4,7 +4,10 @@ name: Deploy Hugo site to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["master"]
+    branches: ["main"]
+
+  schedule:
+    - cron: "0 * * * *"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -43,6 +46,18 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v2
+      - name: Fetch HTB stats
+        env:
+          HTB_USERNAME: SighnWaive
+          HTB_USER_ID: 1840809
+          HTB_API_TOKEN: ${{ secrets.HTB_API_TOKEN }}
+          HTB_COOKIE: ${{ secrets.HTB_COOKIE }}
+          HTB_XSRF_TOKEN: ${{ secrets.HTB_XSRF_TOKEN }}
+        run: python3 scripts/fetch_htb_stats.py
+      - name: Fetch GitHub grid
+        env:
+          GITHUB_USERNAME: sighnwaive
+        run: python3 scripts/fetch_github_grid.py
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules

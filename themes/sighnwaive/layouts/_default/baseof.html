@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <link rel="stylesheet" href="/css/main.css">
+  <script>
+    (function() {
+      const saved = localStorage.getItem('theme');
+      if (saved) document.documentElement.setAttribute('data-theme', saved);
+    })();
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <nav>
+      <a href="{{ "/" | relLangURL }}" class="logo">
+        <img src="https://avatars.githubusercontent.com/u/86373779" alt="{{ .Site.Title }}" class="nav-avatar">
+        <span>{{ .Site.Title }}</span>
+      </a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/posts/">Blog</a>
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle flashbang mode">
+          <span class="dark-label">⚡ FLASHBANG</span>
+          <span class="light-label">🌙 DARK</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; {{ now.Year }} {{ .Site.Title }}. Built with Hugo.</p>
+  </footer>
+
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', function() {
+      const html = document.documentElement;
+      const current = html.getAttribute('data-theme');
+      const next = current === 'dark' ? 'flashbang' : 'dark';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+  </script>
+</body>
+</html>

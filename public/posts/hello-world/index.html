@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello World | SighnWaive</title>
+  <meta name="description" content="Nighttime hacker. HTB enthusiast. Orange obsessed.">
+  <link rel="stylesheet" href="/css/main.css">
+  <script>
+    (function() {
+      const saved = localStorage.getItem('theme');
+      if (saved) document.documentElement.setAttribute('data-theme', saved);
+    })();
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <nav>
+      <a href="/" class="logo">
+        <img src="https://avatars.githubusercontent.com/u/86373779" alt="SighnWaive" class="nav-avatar">
+        <span>SighnWaive</span>
+      </a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/posts/">Blog</a>
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle flashbang mode">
+          <span class="dark-label">⚡ FLASHBANG</span>
+          <span class="light-label">🌙 DARK</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    
+<article class="post-single">
+  <header class="post-header">
+    <h1>Hello World</h1>
+    <div class="post-meta">April 14, 2026</div>
+  </header>
+  <div class="post-content">
+    <p>Welcome to SighnWaive&rsquo;s new blog. This site is built with Hugo and designed for the nighttime hacker who loves orange.</p>
+<h2 id="whats-here">What&rsquo;s Here</h2>
+<ul>
+<li><strong>HTB Status</strong> - Current rank, points, and boxes pwned from Hack The Box</li>
+<li><strong>GitHub Stats</strong> - Public repos, followers, and more</li>
+<li><strong>Blog Posts</strong> - HTB writeups, CTF solutions, and hacking notes</li>
+</ul>
+<h2 id="flashbang-mode">Flashbang Mode</h2>
+<p>Click the FLASHBANG button in the nav to toggle to a high-contrast orange-on-white theme. Your preference is saved locally.</p>
+<p>Stay tuned for more!</p>
+
+  </div>
+</article>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 SighnWaive. Built with Hugo.</p>
+  </footer>
+
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', function() {
+      const html = document.documentElement;
+      const current = html.getAttribute('data-theme');
+      const next = current === 'dark' ? 'flashbang' : 'dark';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+  </script>
+</body>
+</html>

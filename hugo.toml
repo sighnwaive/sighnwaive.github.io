@@ -1,0 +1,15 @@
+baseURL = 'https://sighnwaive.github.io/'
+languageCode = 'en-us'
+title = 'SighnWaive'
+theme = 'sighnwaive'
+
+[params]
+  description = "Nighttime hacker. HTB enthusiast. Orange obsessed."
+  htb_username = "SighnWaive"
+  htb_rank = "1337"
+  htb_points = "4242"
+  htb_boxes = "69"
+  github_username = "sighnwaive"
+
+[taxonomies]
+  tag = "tags"

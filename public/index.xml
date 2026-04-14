@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SighnWaive</title>
+    <link>https://sighnwaive.github.io/</link>
+    <description>Recent content on SighnWaive</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://sighnwaive.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>https://sighnwaive.github.io/posts/hello-world/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://sighnwaive.github.io/posts/hello-world/</guid>
+      <description>Welcome to SighnWaive&amp;rsquo;s new blog. This site is built with Hugo and designed for the nighttime hacker who loves orange.
+What&amp;rsquo;s Here HTB Status - Current rank, points, and boxes pwned from Hack The Box GitHub Stats - Public repos, followers, and more Blog Posts - HTB writeups, CTF solutions, and hacking notes Flashbang Mode Click the FLASHBANG button in the nav to toggle to a high-contrast orange-on-white theme. Your preference is saved locally.</description>
+    </item>
+    
+  </channel>
+</rss>
